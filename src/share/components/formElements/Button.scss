@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.button {
+  background-color: $main-yellow;
+  border-radius: 10px;
+  border: none;
+  min-width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  &.m-left{
+    margin-left: 1rem;
+  }
+  &.m-right{
+    margin-right: 1rem;
+  }
+
+  &.disabled{
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+  &.mini{
+    min-width: 120px;
+    padding: 0;
+    height: 25px;
+  }
+}
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

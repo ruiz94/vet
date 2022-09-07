@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+.results {
+  width: 80%;
+  margin-top: 3rem;
+  // background: green;
+
+  .btns-actions{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .information{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    .item-input{
+      width: 45%;
+    }
+  }
+
+  .btn-clean{
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

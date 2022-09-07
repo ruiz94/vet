@@ -1,0 +1,33 @@
+.pet-cards{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  .card{
+    display: flex;
+    width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    .image {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-right: 10px;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+      }
+    }
+    .info{
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      padding: 1rem 0;
+    }
+  }
+}

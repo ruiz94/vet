@@ -1,0 +1,56 @@
+@import '../../../variables.scss';
+.item-input{
+  // width: 45%;
+  margin: 2rem 0;
+  // display: flex;
+  
+  div{
+    display: flex;
+  }
+  label{
+    margin-right: 1rem;
+    display: flex;
+  }
+  input{
+    border: none;
+    background: transparent;
+    color: #666666;
+  }
+  textarea{
+    background: transparent;
+    color: #666666;
+    width: 90%;
+  }
+
+  .text, input{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    width: 90%;
+    text-align: center;
+  }
+  .error{
+    margin: 0;
+    color: $error;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &.input-login{
+    margin: 0.5rem 0;
+    width: 100%;
+    div{
+      flex-direction: column;
+      align-items: center;
+    }
+    input{
+      // border: 1px;
+      background: #fff;
+      color: #666666;
+      padding: .7rem;
+      border-radius: 10px;
+    }
+    label{
+      color: #fff;
+      margin-bottom: 3px;
+    }
+  }
+}

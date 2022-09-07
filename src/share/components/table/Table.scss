@@ -1,0 +1,38 @@
+.table {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+
+  .header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    // justify-content: space-around;
+
+    span {
+      padding-left: 1rem;
+    }
+  }
+  .body {
+    .row {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      margin: 1rem 0;
+
+      span {
+        word-wrap: break-word;
+        padding: 0 5px 5px 1rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .no-data {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}

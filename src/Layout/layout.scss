@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+.vet-main{
+  min-height: 100vh;
+  header, aside{
+    background-color: $main-background;
+  }
+  header{
+    height: 100px;
+    box-shadow: 0 0 35px -10px rgba(0,0,0,0.5);
+    overflow: overlay;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      color: $main-yellow;
+      font-size: 2.5rem;
+      margin: 0;
+      display: flex;
+      margin-top: 1rem;
+    }
+    .header-actions{
+      // background-color: #fff;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .userName{
+        color: $main-yellow;
+        font-size: 1.5rem;
+        text-align: end;
+      }
+      .buttons{
+        display: flex;
+        margin-bottom: .5rem;
+        button{
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+  main{
+    display: flex;
+    background: $first-background;
+    min-height: calc(100vh - 100px);
+    .children{
+      width: 100%;
+    }
+  }
+  aside{
+    // min-height: 100vh;
+    width: 200px;
+    // box-shadow: 0 0 25px 15px rgba(0,0,0,0.7) inset;
+    padding-top: 3rem;
+
+    .item{
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: $text-color;
+
+      &.selected{
+        background-color: $main-yellow;
+      }
+    }
+    .item:last-child{
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+}

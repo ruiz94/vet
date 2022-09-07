@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+.search-section {
+  display: flex;
+  justify-content: center;
+
+  form {
+    width: 70%;
+    margin-top: 5rem;
+
+    label .err {
+      color: red;
+      font-size: 13px;
+      margin-left: 1rem;
+    }
+    input {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.5);
+      border: none;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      box-sizing: border-box;
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    .btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+    
+  }
+}

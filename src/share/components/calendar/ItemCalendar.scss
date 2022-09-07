@@ -1,0 +1,51 @@
+@import '../../../variables.scss';
+.item-calendar{
+  width: 100px;
+  height: 100px;
+  // border: 1px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  background-color: #fff;
+
+  &.no-available, &.no-work-day, &.not-selectable{
+    cursor: default;
+    pointer-events: none;
+  }
+  &.no-available{
+    background-color: $no-available;
+  }
+  &.no-work-day{
+    background-color: $main-yellow;
+  }
+  &.full-day{
+    background-color: $error;
+  }
+  &.actualDay{
+    background-color: #a8dadc;
+  }
+  
+
+  &.saturday{
+    border-right: 1px solid black;
+  }
+  &.under{
+    border-bottom: 1px solid black;
+  }
+  &:last-child{
+    border-right: 1px solid black;
+  }
+  
+
+  .day{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

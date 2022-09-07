@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+.layout-auth{
+  background-color: $first-background;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card{
+    background-color: $main-background;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2, .switch{
+      color: #fff;
+    }
+    button{
+      margin: 2rem auto 0;
+      width: 80%;
+    }
+    p.error{
+      color: #F6BD60;
+    }
+    .switch{
+      display: flex;
+      .btn-switch{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: underline;
+        cursor: pointer;
+        width: fit-content;
+        margin: 0;
+      }
+    }
+  }
+}

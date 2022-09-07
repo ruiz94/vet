@@ -1,0 +1,136 @@
+@import '../../../variables.scss';
+.calendar{
+  width: 100%;
+
+  .days{
+    width: 720px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .controls{
+    
+
+    .item{
+      display: block;
+      width: 30%;
+      text-align: center;
+    }
+
+    button{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $main-yellow;
+      text-decoration: underline;
+      width: fit-content;
+      transition: .2s all ease;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .labels{
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+    .item {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem;
+      span{
+        margin-left: .5rem;
+        border: 1px solid black;
+        width: 15px;
+        height: 15px;
+        display: block;
+
+        &.no-work{
+          background: $main-yellow;
+        }
+        &.no-available{
+          background-color: $no-available;
+        }
+        &.full{
+          background-color: $error;
+        }
+        &.available{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .chosen-date, .controls{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    width: 100%;
+    background-color: $main-background;
+    color: $main-yellow;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .section-hours{
+    .chosen-date{
+      justify-content: center;
+      align-items: center;
+      .selected-hour{
+        margin-left: .8rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+    .hours{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  
+      .item-hour{
+        width: 50%;
+        background-color: $main-background;
+        color: $main-yellow;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        margin: 2px;
+  
+        &:hover{
+          box-shadow: 0 0 15px -6px rgba(0, 0, 0, .5);
+        }
+        &.unavailable{
+          opacity: 0.7;
+          pointer-events: none;
+        }
+        &.selected, &.booked{
+          background-color: $main-yellow;
+          color: $main-background;
+        }
+      }
+    }
+    .hours-controls{
+      display: flex;
+      position: relative;
+      justify-content: center;
+
+      button{
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
+        text-decoration: underline;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: $error;
+      }
+    }
+  }
+
+}
